@@ -2,6 +2,8 @@
 #   twitter bootstrap, haml, simple_form
 #   rspec, capybara, factorygirl
 #   git, heroku
+# Usage:
+#   $ rails new NAME -m https://raw.github.com/linoj/rails_template/master/starter1.rb
 
 #====== git =======
 git :init
@@ -16,23 +18,40 @@ gem 'simple_form'
 gem 'decent_exposure'
 gem 'squeel'
 
+#gem 'activeadmin'
+#gem 'ckeditor', '3.7.1'
+
+#gem 'kaminari'         # paginator
+#gem 'paperclip'
+#gem 'acts-as-taggable-on', '~> 2.3.1'
+#devise, omniauth
+#gem 'cancan'           # authorization
+#gem 'wicked_pdf'       # pdf export
+#gem 'whenever'         # cron jobs
+
 gem_group :assets do
   #gem 'twitter-bootstrap-rails'
   gem 'bootstrap-sass'
+  #gem 'bourbon'        # sass mixins
 end
 
 gem_group :development, :test do
   gem 'debugger'
+  #gem 'rails_best_practices'
   gem 'sqlite3'
 
   gem "rspec-rails"
   gem 'rspec-instafail'
   gem 'database_cleaner'
+  #gem 'fuubar'         # progress bar --format Fuubar
 
   gem "capybara"
   gem 'capybara-webkit'
   gem "selenium-webdriver"
   gem 'launchy' # provides save_and_open_page
+
+  #gem 'jasmine'
+  #gem 'jasminerice'
 
   gem 'factory_girl_rails'
   gem 'faker'
